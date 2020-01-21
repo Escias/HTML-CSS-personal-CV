@@ -1,0 +1,30 @@
+.profile{
+  height: 150px;
+  width: auto;
+  border-style: double;
+  border-radius: 30%;
+}
+
+.downloadcv{
+  padding: 15px 30px;
+}
+
+.contact{
+  height: 30px;
+  width: auto;
+}
+
+.contact1{
+  height: 15px;
+  width: auto;
+}
+
+.pro{
+  margin-left: 50px;
+}
+
+h1{
+  box-sizing: content-box;
+  width: 10%;
+  background: red;
+}
