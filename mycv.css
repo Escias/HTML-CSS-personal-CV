@@ -1,12 +1,90 @@
-.profile{
+.title{
+  position: fixed;
+  left: 15%;
+}
+
+.body{
+  border-style: dashed;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: whitesmoke;
+  padding: 25px 25px;
+}
+
+.name{
+  height:30px;
+  width: auto;
+}
+.proinfo h1{
+  position: absolute;
+  left: 220px;
+  width: 20px;
+  box-sizing: content-box;
+  width: 180px;
+  background: lightseagreen;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.proinfo figure img{
   height: 150px;
   width: auto;
   border-style: double;
-  border-radius: 30%;
+  border-radius: 50px;
+}
+.proinfo h3{
+  position: absolute;
+  left: 220px;
+  top: 100px;
+  width: 180px;
+}
+.proinfo p{
+  position: absolute;
+  left: 220px;
+  top: 120px;
+  width: 200px;
+}
+.proinfo .downloadcv{
+  position: absolute;
+  left: 220px;
+  top: 160px;
+  width: 200px;
+}
+.proinfo a button{
+  border-style: inset;
+  padding: 15px 30px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+.proinfo .prolink{
+  position: absolute;
+  right: 1%;
+  top: 45px;
+  width: 200px;
+}
+.proinfo .prolink1{
+  position: absolute;
+  right: 1%;
+  top: 65px;
+  width: 200px;
 }
 
-.downloadcv{
-  padding: 15px 30px;
+.comp{
+  border-style: double;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: whitesmoke;
+}
+.comp ul li img{
+  height: 18px;
+  width: auto;
 }
 
 .contact{
@@ -19,12 +97,44 @@
   width: auto;
 }
 
+.hobby div img{
+  height: 30px;
+  width: auto;
+}
+.hobby div p{
+  font-style: italic;
+}
+.hobby .hobg{
+  padding: 5px 10px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: lightgrey;
+}
+.hobby .hobm{
+  padding: 5px 10px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: lightgrey;
+}
+.hobby .hobi{
+  padding: 5px 10px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: lightgrey;
+}
+
 .pro{
   margin-left: 50px;
 }
 
-h1{
-  box-sizing: content-box;
-  width: 10%;
-  background: red;
+.message{
+  position: absolute;
+  left: 15%;
+  top: 10%;
 }
