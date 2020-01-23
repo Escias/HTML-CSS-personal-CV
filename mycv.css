@@ -1,90 +1,178 @@
-.title{
-  position: fixed;
-  left: 15%;
+a{
+  color: inherit;
+  text-decoration: none;
 }
 
-.body{
-  border-style: dashed;
+button{
+  outline: none;
+}
+
+input{
+  outline: none;
+}
+textarea{
+  outline: none;
+}
+
+body{
+  border-style: solid;
+  box-shadow: 0px 0px 15px 15px lightgrey;
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  background-color: whitesmoke;
-  padding: 25px 25px;
+  background-image: url("image/background.png")
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+}
+
+h2{
+  margin-left: 10%;
+  text-decoration: underline;
+  text-decoration-color: blue;
 }
 
 .name{
+  height:70px;
+  width: auto;
+}
+
+.latin{
+  font-size: 10px;
+  font-style: oblique;
+}
+.cours{
+  width: 300px;
+  font-size: 15px;
+  font-style: oblique;
+}
+
+.sec{
+  margin: 0px 50px;
+  margin-bottom: 70px;
+  background-color: rgba(245, 245, 245, 0.5);
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+span{
+  margin-left: 10px;
+}
+.sec h2 img{
   height:30px;
   width: auto;
 }
-.proinfo h1{
-  position: absolute;
-  left: 220px;
-  width: 20px;
-  box-sizing: content-box;
-  width: 180px;
-  background: lightseagreen;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+
+.proinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(211, 211, 211, 0.6);
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .proinfo figure img{
-  height: 150px;
+  height: 300px;
   width: auto;
   border-style: double;
-  border-radius: 50px;
+  border-radius: 50%;
 }
-.proinfo h3{
-  position: absolute;
-  left: 220px;
-  top: 100px;
-  width: 180px;
+.proinfo .inf{
+  text-align: center;
+  font-size: 30px;
 }
-.proinfo p{
-  position: absolute;
-  left: 220px;
-  top: 120px;
-  width: 200px;
+.proinfo .inf .txtinfo{
+  width: 300px;
+  padding: 10px;
 }
-.proinfo .downloadcv{
-  position: absolute;
-  left: 220px;
-  top: 160px;
-  width: 200px;
-}
-.proinfo a button{
-  border-style: inset;
-  padding: 15px 30px;
+.proinfo .inf .butdown{
+  height:30px;
+  width:150px;
+  border-color: blue;
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
+  background-color: white;
 }
-.proinfo .prolink{
-  position: absolute;
-  right: 1%;
-  top: 45px;
-  width: 200px;
-}
-.proinfo .prolink1{
-  position: absolute;
-  right: 1%;
-  top: 65px;
-  width: 200px;
+
+.linkpro2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .comp{
-  border-style: double;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background-color: whitesmoke;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.comp ul li img{
+.comp p{
+    flex: 0 0 10%;
+  }
+.comp p img{
   height: 18px;
   width: auto;
+}
+.comp1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.comp2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.comp3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.compimg{
+  display: flex;
+  align-items: center;
+}
+.digi{
+  display: flex;
+  flex-direction: row;
+  float: left;
+  align-items: center;
+  margin-left: 4%;
+}
+
+.etude{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.etude .etu figure .stuicon{
+  height: 60px;
+  width: auto;
+}
+.etu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .contact{
@@ -97,6 +185,11 @@
   width: auto;
 }
 
+.hobby{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .hobby div img{
   height: 30px;
   width: auto;
@@ -105,28 +198,25 @@
   font-style: italic;
 }
 .hobby .hobg{
-  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  border: 2px solid;
+  text-align: center;
+  border-style: dotted;
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  background-color: lightgrey;
 }
-.hobby .hobm{
-  padding: 5px 10px;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background-color: lightgrey;
+.noir{
+  margin-top: 2%;
+  text-align: center;
 }
-.hobby .hobi{
-  padding: 5px 10px;
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background-color: lightgrey;
+.jsbutton{
+  height: 10px;
+  width: 60px;
+  background-color: darkcyan;
 }
 
 .pro{
@@ -134,7 +224,50 @@
 }
 
 .message{
-  position: absolute;
-  left: 15%;
-  top: 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 17px;
+  border-style: solid;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: whitesmoke;
+}
+
+footer{
+  border-top: 2px solid black;
+  margin-top: 25px;
+}
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0px 50px;
+}
+
+.projectinfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  background-color: rgba(211, 211, 211, 0.6);
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.projectinfo figure img{
+  height: 200px;
+  width: auto;
+  border-style: double;
+  border-radius: 50%;
+}
+.projectinfo .projectinf h3{
+  font-size: 80px;
 }
